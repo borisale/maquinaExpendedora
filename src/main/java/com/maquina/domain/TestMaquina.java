@@ -36,6 +36,8 @@ public class TestMaquina {
 			System.out.println("5- salir");
 			
 			int opcion = sc.nextInt();
+			
+			//REPONER
 			if(opcion == 1) {
 				System.out.println("¿Qué quieres reponer?");
 				for ( int i = 0; i < bebida.getNumOfRefrescos(); i++ ) {
@@ -62,9 +64,10 @@ public class TestMaquina {
 				        }
 				}else {
 					System.out.println("Tienes que marcar un número válido");
-				}
-				
+				}	
 			}
+			
+			//VER PRECIOS
 			if(opcion == 2) {
 				for ( int i = 0; i < bebida.getNumOfRefrescos(); i++ ) {
 			           refresco = bebida.getRefresco(i);
@@ -74,6 +77,8 @@ public class TestMaquina {
 			                + ", precio " + refresco.getPrecio() + " €");
 			     }
 			}
+			
+			//COMPRAR
 			if(opcion == 3) {
 				System.out.println("¿Qué quieres comprar?");
 				for ( int i = 0; i < bebida.getNumOfRefrescos(); i++ ) {
@@ -101,15 +106,19 @@ public class TestMaquina {
 					System.out.println("Tienes que marcar un número válido");
 				}
 			}
+			
+			//DINERO RECAUDADO
 			if(opcion == 4) {
 				System.out.println("Dinero recaudado: " + recaudacion + " €");
 			}
+			
+			//SALIR
 			if(opcion == 5) {
 				res = 1;
 				System.out.println("Adios!");
 			}
-		  
-		  
+			
+			sc.close();
 		}
 	}
 

@@ -36,40 +36,6 @@ public class Refresco {
 		this.cantidad = cantidad;
 	}
 	
-	public boolean comprar() {
-//		boolean result = true;
-//		if(cant <= 0 || cant > 1) {
-//			System.out.println("No puedes introducir un numero menor o mayor que 1");
-//			result = false;
-//		}
-//		if(cantidad >= cant) {
-//			cantidad -= cant;
-//			System.out.println("Procesando su pedido...");
-//		}else {
-//			System.out.println("No hay stock disponible");
-//			return false;
-//		}
-//		return result;
-		boolean result = true;
-		cantidad--;
-		this.getCantidad();
-		System.out.println("Procesando compra...");
-		return result;
-	}
-	
-	public boolean reponer(int cant) {
-		boolean result = true;
-		if(cant >=1) {
-			this.cantidad += cant;
-			System.out.println(cant + " botellas/latas añadidas");
-			this.setCantidad(cant);
-		}else {
-			System.out.println("Tienes que introducir una botella o lata como mínimo");
-			result = false;
-		}
-		return result;
-	}
-	
 
 	@Override
 	public String toString() {
