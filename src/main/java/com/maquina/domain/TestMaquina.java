@@ -118,7 +118,7 @@ public class TestMaquina {
 				System.out.println("Adios!");
 			}
 			
-			sc.close();
+		
 			
 		}//FIN WHILE
 	}//FIN MAIN

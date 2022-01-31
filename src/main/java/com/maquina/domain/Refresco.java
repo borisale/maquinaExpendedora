@@ -36,11 +36,5 @@ public class Refresco {
 		this.cantidad = cantidad;
 	}
 	
-
-	@Override
-	public String toString() {
-		return "Refresco [nombre=" + nombre + ", precio=" + precio + ", cantidad=" + cantidad + "]";
-	}
-	
 	
 }//FIN CLASE
