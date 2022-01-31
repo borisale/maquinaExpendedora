@@ -81,12 +81,13 @@ public class TestMaquina {
 			            
 			          System.out.println("Refresco [" + (i+1) + "] "
 			                + refresco.getNombre()
-			                + ", precio " + refresco.getPrecio() + " €");
+			                + ", precio " + refresco.getPrecio() + " €"
+			                + ", cantidad " + refresco.getCantidad());
 			     }
 				int opcion1 =sc.nextInt();
 				int cant = 0;
 				if(opcion1 <= 10 || opcion1 >=1) {
-					if(refresco.getCantidad() > 0) {
+					if(bebida.getRefresco(opcion1 - 1).getCantidad() > 0) {
 						refresco = bebida.getRefresco(opcion1 - 1);
 						System.out.println("Producto elegido: " + refresco.getNombre());
 						cant = refresco.getCantidad();
