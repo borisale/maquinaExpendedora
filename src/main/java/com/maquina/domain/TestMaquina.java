@@ -33,7 +33,7 @@ public class TestMaquina {
 			System.out.println("2- Precio");
 			System.out.println("3- Comprar");
 			System.out.println("4- Recaudación");
-			System.out.println("5- salir");
+			System.out.println("5- Salir");
 			
 			int opcion = sc.nextInt();
 			
@@ -119,7 +119,8 @@ public class TestMaquina {
 			}
 			
 			sc.close();
-		}
-	}
+			
+		}//FIN WHILE
+	}//FIN MAIN
 
-}
+}//FIN CLASE

@@ -41,11 +41,6 @@ public class Refresco {
 	public String toString() {
 		return "Refresco [nombre=" + nombre + ", precio=" + precio + ", cantidad=" + cantidad + "]";
 	}
-
 	
 	
-	
-	
-	
-	
-}
+}//FIN CLASE
